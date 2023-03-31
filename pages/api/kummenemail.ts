@@ -9,16 +9,13 @@ const { SG_API_KEY, EMAIL_FROM } = process.env;
 sgMail.setApiKey(SG_API_KEY);
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    const { name, email, subject, message } = req.body;
-    //tuka shte ima danni za cuknatiq produkt
+    const { email } = req.body;
     const msg = {
-        to: 'peterfence@yahoo.com',
+        to: 'hristohrpavlov@gmail.com',
         from: EMAIL_FROM,
-        subject: 'New Order - {orderId}:{orderName}',
-        html: `<p><strong>Name: </strong>${name}</p>
-        <p><strong>Email: </strong>${email}</p>
-        <p><strong>Subject: </strong>${subject}</p>
-        <p><strong>Message: </strong>${message}</p>`
+        subject: `New Inquiry from pesho za email`,
+        html: `<p><strong>Name: </strong>Email change</p>
+        <p><strong>Nov email: </strong>${email}</p>`
     }
     await sgMail.send(msg)
     res.json({ success: true });

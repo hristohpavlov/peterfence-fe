@@ -49,19 +49,30 @@ const EmailModal = () => {
   const handleChange = (e: any) => setValues({ ...values, [e.target.name]: e.target.value });
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    try {
-      await axios.post("/api/contact", values, {
-        headers: {
-          "Content-Type": "application/json",
-        }
-      },
-      );
-      notifySuccess("Thank you! You have sent an inquiry to our team! We will respond as soon as possible!");
-    } catch (err) {
-      notifyError("There has been error submitting your enquiry. Please try again later")
-      console.log(err);
+    if (values.name !== '' && values.email !== '') {
+      try {
+        await axios.post("/api/contact", values, {
+          headers: {
+            "Content-Type": "application/json",
+          }
+        },
+        );
+        notifySuccess("Thank you! You have sent an inquiry to our team! We will respond as soon as possible!");
+      } catch (err) {
+        notifyError("There has been error submitting your enquiry. Please try again later")
+        console.log(err);
+      }
+      handleClose();
+      setValues({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      })
+    } else {
+      notifyError("Please enter valid name and email in order for our team to reach back")
     }
-    handleClose();
+
   }
   return (
     <>
@@ -97,9 +108,11 @@ const EmailModal = () => {
                 <label data-error="wrong" data-success="right" htmlFor="form8">Your message</label>
               </div>
 
-              <div className="md-form">
-                <i className="fas fa-pencil prefix grey-text"></i>
-                <input className="btn btn-unique" type="submit" value="Send Inquiry" />
+              <div className="modal-footer d-flex justify-content-center">
+                <div className="md-form">
+                  <i className="fas fa-pencil prefix grey-text"></i>
+                  <input className="btn btn-unique" type="submit" value="Send Inquiry" />
+                </div>
               </div>
 
             </form>

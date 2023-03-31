@@ -1,18 +1,3 @@
-// import React from "react"
-// import { loginUser } from "../../helpers";
-
-// export default function Admin(){
-//     const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
-//         event.preventDefault();
-//         try {
-//             const loginRes = await loginUser({email,password})
-//         }
-//     }
-//     return(
-
-//     )
-// }
-
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import { AxiosError } from 'axios'
@@ -91,6 +76,7 @@ const Admin = () => {
                                 </div>
                                 <div className="d-grid">
                                     <button type="submit" className="btn btn-dark text-light">Login</button>
+                                    <p>{submitError}</p>
                                 </div>
                             </Form>
                         </div>
