@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const msg = {
         to: 'hristohrpavlov@gmail.com',
         from: EMAIL_FROM,
-        subject: `New Inquiry from pesho za email`,
+        subject: `Admin Panel - Email Change`,
         html: `<p><strong>Name: </strong>Email change</p>
         <p><strong>Nov email: </strong>${email}</p>`
     }

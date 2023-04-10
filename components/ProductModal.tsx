@@ -40,16 +40,15 @@ export const notifyError = (message: any) =>
     type: "error"
   });
 
-const EmailModal = (props: ModalProps) => {
+const ProductModal = (props: ModalProps) => {
   const [values, setValues] = useState({
     name: '',
-    email: '',
-    subject: '',
-    message: '',
     id: 0,
-    productName: ''
+    productName: '',
+    link: '',
+    description: ''
   });
-  const { id, productName, name, email, subject, message } = values
+  const { id, productName, name, link, description } = values
   useEffect(() => {
     setValues({ ...values, id: props.id, productName: props.productName })
   }, [])
@@ -60,9 +59,9 @@ const EmailModal = (props: ModalProps) => {
   const handleChange = (e: any) => setValues({ ...values, [e.target.name]: e.target.value });
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    if (values.name !== '' && values.email !== '') {
+    if (values.name !== '') {
       try {
-        await axios.post("/api/contact", values, {
+        await axios.post("/api/kummenproduct", values, {
           headers: {
             "Content-Type": "application/json",
           }
@@ -76,55 +75,50 @@ const EmailModal = (props: ModalProps) => {
       handleClose();
       setValues({
         name: '',
-        email: '',
-        subject: '',
-        message: '',
         id: 0,
-        productName: ''
+        productName: '',
+        link: '',
+        description: '',
       })
     } else {
-      notifyError("Please enter valid name and email in order for our team to reach back")
+      notifyError("Error")
     }
 
   }
   return (
     <>
-      <button className={classNames("btn card_btn", styles.btn, styles.card_btn)} onClick={handleShow}>Get Inquiry</button>
+      <button className={classNames("btn card_btn", styles.btn, styles.card_btn)} onClick={handleShow}>Modify Product</button>
       <Modal show={show} onHide={handleClose} animation={false}>
         <div className="modal-content">
           <Modal.Header closeButton className="modal-header text-center">
-            <Modal.Title className="modal-title w-100 font-weight-bold">Get Inquiry</Modal.Title>
+            <Modal.Title className="modal-title w-100 font-weight-bold">Modify Product</Modal.Title>
           </Modal.Header>
           <div className="modal-body mx-3">
             <form onSubmit={handleSubmit}>
               <div className="md-form mb-5">
                 <i className="fas fa-user prefix grey-text"></i>
+                <label data-error="wrong" data-success="right" htmlFor="form34">Product name</label>
                 <input type="text" id="form34" name="name" value={name} onChange={handleChange} className="form-control validate" />
-                <label data-error="wrong" data-success="right" htmlFor="form34">Your name</label>
               </div>
 
               <div className="md-form mb-5">
                 <i className="fas fa-envelope prefix grey-text"></i>
-                <input type="email" id="form29" name="email" value={email} onChange={handleChange} className="form-control validate" />
-                <label data-error="wrong" data-success="right" htmlFor="form29">Your email</label>
-              </div>
+                <label data-error="wrong" data-success="right" htmlFor="form29">Product image link</label>
+                <input type="text" id="form34" name="link" value={link} onChange={handleChange} className="form-control validate" />
 
-              <div className="md-form mb-5">
-                <i className="fas fa-tag prefix grey-text"></i>
-                <input type="text" id="form32" name="subject" value={subject} onChange={handleChange} className="form-control validate" />
-                <label data-error="wrong" data-success="right" htmlFor="form32">Subject</label>
               </div>
 
               <div className="md-form">
                 <i className="fas fa-pencil prefix grey-text"></i>
-                <textarea id="form8" name="message" value={message} onChange={handleChange} className="md-textarea form-control" rows={4}></textarea>
-                <label data-error="wrong" data-success="right" htmlFor="form8">Your message</label>
+                <label data-error="wrong" data-success="right" htmlFor="form8">Product Description</label>
+                <textarea id="form8" name="description" value={description} onChange={handleChange} className="md-textarea form-control" rows={4}></textarea>
+
               </div>
 
               <div className="modal-footer d-flex justify-content-center">
                 <div className="md-form">
                   <i className="fas fa-pencil prefix grey-text"></i>
-                  <input className="btn btn-unique" type="submit" value="Send Inquiry" />
+                  <input className="btn btn-unique" type="submit" value="Save changes" />
                 </div>
               </div>
 
@@ -137,4 +131,4 @@ const EmailModal = (props: ModalProps) => {
   )
 }
 
-export default EmailModal
+export default ProductModal

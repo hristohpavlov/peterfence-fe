@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import EmailModal from '../../../../components/EmailModal';
 import { getSession } from 'next-auth/react';
 import router from 'next/router';
+import ProductModal from '../../../../components/ProductModal';
 
 const Shop: NextPage = () => {
 
@@ -22,7 +23,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 1</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={1} productName={"Fence 1"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -32,7 +34,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 2</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={2} productName={"Fence 2"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -42,7 +45,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 3</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={3} productName={"Fence 3"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -52,7 +56,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 4</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={4} productName={"Fence 4"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -62,7 +67,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 5</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={5} productName={"Fence 5"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -72,7 +78,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 6</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={6} productName={"Fence 6"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -82,7 +89,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 7</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={7} productName={"Fence 7"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -92,7 +100,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 8</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={8} productName={"Fence 8"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -102,7 +111,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 9</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={9} productName={"Fence 9"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -112,7 +122,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 10</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={10} productName={"Fence 10"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -122,7 +133,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 11</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={11} productName={"Fence 11"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
@@ -132,7 +144,8 @@ const Shop: NextPage = () => {
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 12</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
-                                        <EmailModal />
+                                        <ProductModal id={12} productName={"Fence 12"} />
+                                        {/* <EmailModal /> */}
                                     </div>
                                 </div>
                             </li>
