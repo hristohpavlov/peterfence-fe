@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 
 import styles from '../styles/Home.module.scss';
-import { Parallax, ParallaxBanner, useParallax } from "react-scroll-parallax";
 import classNames from 'classnames';
 import { LegacyRef, useEffect, useRef, useState } from 'react';
 import EmailModal from '../components/EmailModal';
@@ -35,7 +34,7 @@ const Home: NextPage = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="p-5 mt-4">
-                                    <h1 className="display-4">ACACIA FENCING</h1>
+                                    <h1 className="display-4" style={{ textAlign: 'right' }}> ACACIA FENCING</h1>
                                     <p className="lead" style={{ textAlign: 'right' }}> Acacia’s natural durability, mechanical strength and aesthetic qualities make it perfect for
                                         creating outdoor green spaces, decking, gardening and much more.<br />
                                         The lifespan of acacia is minimum 30 years when in contact with the ground.<br /></p>
