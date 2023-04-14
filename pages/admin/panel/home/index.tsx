@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         picture1: 'https://i.postimg.cc/q7CRygTk/healthcare-knowledge-base-medical-online-600w-1673490232.webp',
         picture2: 'https://i.postimg.cc/q7CRygTk/healthcare-knowledge-base-medical-online-600w-1673490232.webp',
         heading1: 'PETERFENCE',
-        heading2: 'ACACIA FENCE',
+        heading2: 'ACACIA FENCING',
         text1: 'Coming from a farming background, we have been manufacturing and supplying the highest quality wooden fencing not just for the agricultural and rural communities but also for the modern gardener intending to secure property boundaries in style and with ease.',
         text2: 'Acacia’s natural durability, mechanical strength and aesthetic qualities make it perfect for creating outdoor green spaces, decking, gardening and much more. The lifespan of acacia is minimum 30 years when in contact with the ground.',
     });
