@@ -30,19 +30,6 @@ const AdminHeader = (props: HeaderProps) => {
             localStorage.setItem("theme", "light")
         }
     }, [theme])
-    useEffect(() => {
-        var today = new Date(),
-            time = today.getHours();
-        setDate(time);
-        if (localStorage.getItem('theme') === null) {
-            if (time > 6 && time < 18) {
-                setTheme("light");
-            } else if (date < 18 || date > 6) {
-                setTheme("dark");
-            }
-        }
-    }, [])
-    console.log(date)
     console.log("default theme", theme)
     return (
         <>

@@ -10,12 +10,10 @@ const Layout = ({ children }: any) => {
     const [navbar, setNavbar] = useState(0);
     const [currTheme, setCurrTheme] = useState<String | undefined>('');
     const { theme, setTheme } = useTheme();
-    useEffect(() => {
-        setCurrTheme(theme);
-    },[theme])
+    const [date, setDate] = useState(0);
     return (
         <>
-            <ToastContainer className={classNames("toast_position",styles.toast_position)}/>
+            <ToastContainer className={classNames("toast_position", styles.toast_position)} />
             <Header scrollPos={navbar} />
             <main>
                 <div className={classNames("container", styles.container_center)}>
@@ -30,7 +28,7 @@ const Layout = ({ children }: any) => {
                     }
                 </div>
                 <div className={classNames("container", styles.container_center)}>
-                {navbar < 50 && <div className={classNames("scroll_down", styles.scroll_down)}></div>}
+                    {navbar < 50 && <div className={classNames("scroll_down", styles.scroll_down)}></div>}
                 </div>
                 <div onScroll={(e) => { const element = e.target as HTMLInputElement; setNavbar(element.scrollTop) }} className={classNames("parallax", styles.parallax)}>
                     <div className={classNames("parallax_layer parallax_layer_0", styles.parallax_layer, styles.parallax_layer_0)}>
