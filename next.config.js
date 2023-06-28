@@ -13,4 +13,8 @@ module.exports = nextConfig;
 module.exports = {
     target: 'serverless',
     target: "experimental-serverless-trace",
+    i18n: {
+        locales: ["en"],
+        defaultLocale: "en",
+    },
 };

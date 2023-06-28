@@ -2,11 +2,17 @@ import type { NextPage } from 'next';
 import styles from '../styles/Home.module.scss';
 import classNames from 'classnames';
 import ContactUsModal from '../components/ContactUsModal';
+import { Helmet } from 'react-helmet';
 
 const About: NextPage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>About - Discover More About Acacia Wood Fencing</title>
+                <meta name="description" content="We specialise in the production and supply of Use Class 4 wooden fencing and provide the greatest return on your investment. Find out more by visiting our website." />
+                <link rel="canonical" href="https://peterfence.com/about" />
+            </Helmet>
             <section id="hero">
                 <div className={classNames("container", styles.container_center)}>
                     <h1 className={classNames("text-center m-5 p-5", styles.text_custom)}>About Us</h1>
@@ -43,7 +49,6 @@ const About: NextPage = () => {
                     <br />
                     <div className="text-center">
                         <ContactUsModal></ContactUsModal>
-                        {/* <a href="#" className="btn btn-lg btn-outline-light text-center">Contact Us</a> */}
                     </div>
                 </div>
             </section>

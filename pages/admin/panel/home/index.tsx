@@ -47,7 +47,6 @@ const Home: NextPage = () => {
                                         <label data-error="wrong" data-success="right" htmlFor="form34">Picture 1 Link</label>
                                         <input onChange={handleChange} type="text" id="form34" name="picture1" value={picture1} className="form-control validate" />
                                     </div>
-                                    {/* <img className="w-100 mt-4 pt-5" src="/static/picture_1.png" /> */}
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="p-5 mt-4">
@@ -87,7 +86,6 @@ const Home: NextPage = () => {
                                         <label data-error="wrong" data-success="right" htmlFor="form34">Picture 2 Link</label>
                                         <input onChange={handleChange} value={picture2} type="text" id="form34" name="picture2" className="form-control validate" />
                                     </div>
-                                    {/* <img className="w-100 pt-5 mt-4" src="/static/photo_2.png" /> */}
                                 </div>
 
                             </div>

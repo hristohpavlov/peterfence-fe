@@ -11,6 +11,9 @@ const Layout = ({ children }: any) => {
     const [currTheme, setCurrTheme] = useState<String | undefined>('');
     const { theme, setTheme } = useTheme();
     const [date, setDate] = useState(0);
+    useEffect(() => {
+        setCurrTheme(theme);
+    }, [theme])
     return (
         <>
             <ToastContainer className={classNames("toast_position", styles.toast_position)} />
@@ -32,34 +35,33 @@ const Layout = ({ children }: any) => {
                 </div>
                 <div onScroll={(e) => { const element = e.target as HTMLInputElement; setNavbar(element.scrollTop) }} className={classNames("parallax", styles.parallax)}>
                     <div className={classNames("parallax_layer parallax_layer_0", styles.parallax_layer, styles.parallax_layer_0)}>
-                        {/* {theme === 'dark' ? <img src="/static/1_moon.png" /> : <img src="/static/1_sun.png" />} */}
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_1", styles.parallax_layer, styles.parallax_layer_1)}>
-                        <img src="" />
+                        <img alt="background of mountains one" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_2", styles.parallax_layer, styles.parallax_layer_2)}>
-                        <img src="" />
+                        <img alt="background of mountains two" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_3", styles.parallax_layer, styles.parallax_layer_3)}>
-                        <img src="" />
+                        <img alt="background of mountains three" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_4", styles.parallax_layer, styles.parallax_layer_4)}>
-                        <img src="" />
+                        <img alt="background of mountains four" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_5", styles.parallax_layer, styles.parallax_layer_5)}>
-                        <img src="" />
+                        <img alt="background of mountains five" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_6", styles.parallax_layer, styles.parallax_layer_6)}>
-                        <img src="" />
+                        <img alt="background of mountains six" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_7", styles.parallax_layer, styles.parallax_layer_7)}>
-                        <img src="" />
+                        <img alt="background of mountains seven" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_8", styles.parallax_layer, styles.parallax_layer_8)}>
-                        <img src="" />
+                        <img alt="background of mountains eight" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_9", styles.parallax_layer, styles.parallax_layer_9)}>
-                        <img src="" />
+                        <img alt="background of mountains nine" src="" />
                     </div>
                     <div className={classNames("parallax_cover", styles.parallax_cover)}>
                         {children}
