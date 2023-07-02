@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import { Container, Nav, Navbar } from "react-bootstrap";
 import styles from '../styles/Header.module.scss';
+import Image from 'next/image'
 import { Helmet } from 'react-helmet';
 
 interface HeaderProps {
@@ -56,8 +57,8 @@ const Header = (props: HeaderProps) => {
             </Helmet>
             <Navbar collapseOnSelect sticky="top" expand="lg" bg="dark" variant="dark" className={classNames(scrolling ? "active" : "transparent")}>
                 <Container style={{ maxWidth: "unset" }}>
-                    {currTheme === 'dark' && <Navbar.Brand href="/" aria-label="Home Page Navigation Button"><img alt="company logo dark" src="/static/peterfence-only-logo-dark.webp" style={{ maxHeight: '50px', minWidth: '60px', marginTop: '-10px', marginBottom: '-10px' }} /></Navbar.Brand>}
-                    {currTheme === 'light' && <Navbar.Brand href="/"><img alt="company logo" aria-label="Home Page Navigation Button" src="/static/peterfence-only-logo.webp" style={{ maxHeight: '50px', minWidth: '60px', marginTop: '-10px', marginBottom: '-10px' }} /></Navbar.Brand>}
+                    {currTheme === 'dark' && <Navbar.Brand href="/" aria-label="Home Page Navigation Button"><Image alt="company logo dark" src="/static/peterfence-only-logo-dark.webp" style={{ maxHeight: '50px', minWidth: '60px', marginTop: '-10px', marginBottom: '-10px' }} /></Navbar.Brand>}
+                    {currTheme === 'light' && <Navbar.Brand href="/"><Image alt="company logo" aria-label="Home Page Navigation Button" src="/static/peterfence-only-logo.webp" style={{ maxHeight: '50px', minWidth: '60px', marginTop: '-10px', marginBottom: '-10px' }} /></Navbar.Brand>}
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" className="d-flex d-lg-none flex-column justify-content-around" aria-label="menu">
                         <span className="toggler-icon top-bar" aria-label="menu icon"></span>
                         <span className="toggler-icon middle-bar" aria-label="menu icon"></span>

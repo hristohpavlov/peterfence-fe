@@ -2,6 +2,7 @@ import classNames from "classnames";
 import Footer from "./Footer";
 import Header from "./Header";
 import styles from '../styles/Home.module.scss';
+import Image from 'next/image'
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { ToastContainer } from "react-toastify";
@@ -37,31 +38,31 @@ const Layout = ({ children }: any) => {
                     <div className={classNames("parallax_layer parallax_layer_0", styles.parallax_layer, styles.parallax_layer_0)}>
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_1", styles.parallax_layer, styles.parallax_layer_1)}>
-                        <img alt="background of mountains one" src="" />
+                        <Image alt="background of mountains one" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_2", styles.parallax_layer, styles.parallax_layer_2)}>
-                        <img alt="background of mountains two" src="" />
+                        <Image alt="background of mountains two" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_3", styles.parallax_layer, styles.parallax_layer_3)}>
-                        <img alt="background of mountains three" src="" />
+                        <Image alt="background of mountains three" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_4", styles.parallax_layer, styles.parallax_layer_4)}>
-                        <img alt="background of mountains four" src="" />
+                        <Image alt="background of mountains four" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_5", styles.parallax_layer, styles.parallax_layer_5)}>
-                        <img alt="background of mountains five" src="" />
+                        <Image alt="background of mountains five" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_6", styles.parallax_layer, styles.parallax_layer_6)}>
-                        <img alt="background of mountains six" src="" />
+                        <Image alt="background of mountains six" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_7", styles.parallax_layer, styles.parallax_layer_7)}>
-                        <img alt="background of mountains seven" src="" />
+                        <Image alt="background of mountains seven" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_8", styles.parallax_layer, styles.parallax_layer_8)}>
-                        <img alt="background of mountains eight" src="" />
+                        <Image alt="background of mountains eight" src="" />
                     </div>
                     <div className={classNames("parallax_layer parallax_layer_9", styles.parallax_layer, styles.parallax_layer_9)}>
-                        <img alt="background of mountains nine" src="" />
+                        <Image alt="background of mountains nine" src="" />
                     </div>
                     <div className={classNames("parallax_cover", styles.parallax_cover)}>
                         {children}
