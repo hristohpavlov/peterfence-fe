@@ -67,9 +67,9 @@ const Header = (props: HeaderProps) => {
                         <Nav className="me-auto">
                         </Nav>
                         <Nav>
-                            <label id="checkbox-1" className={classNames(styles.switch)}>
-                                <input aria-labelledby="checkbox-1" type="checkbox" checked={theme === 'dark' ? true : false} onClick={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}></input>
-                                <span aria-labelledby="checkbox-1" className={classNames(styles.slider)}></span>
+                            <label id="checkbox-1" aria-label="mode-toggle" role="mode-toggle" className={classNames(styles.switch)}>
+                                <input aria-labelledby="checkbox-1" aria-label="mode-toggle" role="mode-toggle" type="checkbox" checked={theme === 'dark' ? true : false} onClick={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}></input>
+                                <span aria-labelledby="checkbox-1" aria-label="mode-toggle" role="mode-toggle" className={classNames(styles.slider)}></span>
                             </label>
                             <Nav.Link href="/" aria-label="Home Page">Home</Nav.Link>
                             <Nav.Link eventKey={2} href="/shop" aria-label="Shop Page">Shop</Nav.Link>

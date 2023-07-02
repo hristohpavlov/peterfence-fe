@@ -13,9 +13,9 @@ const Footer = () => {
                 <section className="">
                     <div className="row">
                         <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 className="text-uppercase mb-4 font-weight-bold">
+                            <h1 className={classNames("text-uppercase mb-4 font-weight-bold", styles.text_sm_sm)}>
                                 PETERFENCE
-                            </h6>
+                            </h1>
                             <p>
                                 The highest quality manufacturer and supplier of wooden fencing designed for agricultural and rural communities as well as  the modern gardener intending to secure property boundaries
                             </p>
@@ -24,7 +24,7 @@ const Footer = () => {
                         <hr className="w-100 clearfix d-md-none" />
 
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <h1 className={classNames("text-uppercase mb-4 font-weight-bold", styles.text_sm_sm)}>Products</h1>
                             <p>
                                 <a className="text-white" href="/" aria-label="Home Page">Home</a>
                             </p>
@@ -39,7 +39,7 @@ const Footer = () => {
                         <hr className="w-100 clearfix d-md-none" />
 
                         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 className="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
+                            <h1 className={classNames("text-uppercase mb-4 font-weight-bold", styles.text_sm_sm)}>Contact Us</h1>
                             <p><FontAwesomeIcon icon={faHome} className="mr-3" /> Aberdeen, AB24 5PR, UK</p>
                             <p><FontAwesomeIcon icon={faEnvelope} className="mr-3" /> peterfence@yahoo.com</p>
                             <p><FontAwesomeIcon icon={faPhone} className="mr-3" /> 07955 398345</p>
