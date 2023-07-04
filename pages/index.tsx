@@ -18,7 +18,7 @@ const Home: NextPage = () => {
                     <div className="container my-5 pt-3">
                         <div className="row">
                             <div className="col-lg-6">
-                                <img alt="acacia tree" width="100" className=" mt-4 pt-5" src="/static/picture_1.webp" />
+                                <img alt="acacia tree" width="100" height="100" className=" mt-4 pt-5" src="/static/picture_1.webp" />
                             </div>
                             <div className="col-lg-6">
                                 <div className="p-5 mt-4">
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <img alt="fence builder" width="100" className=" pt-5 mt-4" src="/static/photo_2.webp" />
+                                <img alt="fence builder" width="100" height="100" className=" pt-5 mt-4" src="/static/photo_2.webp" />
                             </div>
 
                         </div>
