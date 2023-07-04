@@ -19,7 +19,7 @@ const Shop: NextPage = () => {
                         <ul className={classNames("cards", styles.cards)}>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="wooden fence" className={classNames("img", styles.img)} src="/static/1.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="wooden fence" className={classNames("img", styles.img)} src="/static/1.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 1</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -30,7 +30,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="privacy fence" className={classNames("img", styles.img)} src="/static/2.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="privacy fence" className={classNames("img", styles.img)} src="/static/2.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 2</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -41,7 +41,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="acacia fence" className={classNames("img", styles.img)} src="/static/3.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="acacia fence" className={classNames("img", styles.img)} src="/static/3.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 3</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -52,7 +52,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="commercial fence" className={classNames("img", styles.img)} src="/static/4.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="commercial fence" className={classNames("img", styles.img)} src="/static/4.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 4</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -63,7 +63,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="construction fence" className={classNames("img", styles.img)} src="/static/5.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="construction fence" className={classNames("img", styles.img)} src="/static/5.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 5</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -74,7 +74,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="long-lasting fence" className={classNames("img", styles.img)} src="/static/6.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="long-lasting fence" className={classNames("img", styles.img)} src="/static/6.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 6</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -85,7 +85,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="quality fence" className={classNames("img", styles.img)} src="/static/1.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="quality fence" className={classNames("img", styles.img)} src="/static/1.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 7</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -96,7 +96,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="privacy fence" className={classNames("img", styles.img)} src="/static/2.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="privacy fence" className={classNames("img", styles.img)} src="/static/2.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 8</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -107,7 +107,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="wooden fencing" className={classNames("img", styles.img)} src="/static/3.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="wooden fencing" className={classNames("img", styles.img)} src="/static/3.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 9</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -118,7 +118,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="acacia fencing" className={classNames("img", styles.img)} src="/static/4.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="acacia fencing" className={classNames("img", styles.img)} src="/static/4.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 10</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -129,7 +129,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="pet-friendly fence" className={classNames("img", styles.img)} src="/static/5.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="pet-friendly fence" className={classNames("img", styles.img)} src="/static/5.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 11</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
@@ -140,7 +140,7 @@ const Shop: NextPage = () => {
                             </li>
                             <li className={classNames("cards_item", styles.cards_item)}>
                                 <div className={classNames("card", styles.card)}>
-                                    <div className={classNames("card_image", styles.card_image)}><img alt="privacy fence" className={classNames("img", styles.img)} src="/static/6.webp" /></div>
+                                    <div className={classNames("card_image", styles.card_image)}><img height="100%" width="100%" alt="privacy fence" className={classNames("img", styles.img)} src="/static/6.webp" /></div>
                                     <div className={classNames("card_content", styles.card_content)}>
                                         <h2 className={classNames("card_title", styles.card_title)}>Fence 12</h2>
                                         <p className={classNames("card_text", styles.card_text)}>Demo of product description</p>
