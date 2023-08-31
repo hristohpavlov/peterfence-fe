@@ -43,8 +43,6 @@ const Header = (props: HeaderProps) => {
             localStorage.setItem("theme", "light")
         }
     }, [theme])
-    console.log(date)
-    console.log("default theme", theme)
     return (
         <>
             <Helmet>

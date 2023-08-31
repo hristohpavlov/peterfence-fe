@@ -40,7 +40,7 @@
   right: 0;
   min-height: 250%;
   width: 83.7%;
-  margin-left: 16.6%;
+  margin-left: 16.5%;
 }
 
 
@@ -370,12 +370,13 @@
 
 .container_text {
   position: absolute;
-    bottom: 8%;
-    right: 5%;
-    display: grid;
-    text-align: right;
-    padding-right: 0 !important;
+  bottom: 8%;
+  right: 5%;
+  display: grid;
+  text-align: right;
+  padding-right: 0 !important;
 }
+
 .title_text {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -383,6 +384,7 @@
   text-transform: uppercase;
   z-index: 999 !important;
 }
+
 .title_word {
   animation: color-animation 2s linear infinite;
 }
@@ -402,17 +404,40 @@
 }
 
 @keyframes color-animation {
-  0%    {color: var(--color-1)}
-  24%   {color: var(--color-1)}
-  25%   {color: var(--color-2)}
-  50%   {color: var(--color-2)}
-  51%   {color: var(--color-3)}
-  74%   {color: var(--color-3)}
-  75%  {color: var(--color-4)}
-  100% {color: var(--color-4)}
+  0% {
+    color: var(--color-1)
+  }
+
+  24% {
+    color: var(--color-1)
+  }
+
+  25% {
+    color: var(--color-2)
+  }
+
+  50% {
+    color: var(--color-2)
+  }
+
+  51% {
+    color: var(--color-3)
+  }
+
+  74% {
+    color: var(--color-3)
+  }
+
+  75% {
+    color: var(--color-4)
+  }
+
+  100% {
+    color: var(--color-4)
+  }
 }
 
-.main{
+.main {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -496,15 +521,17 @@
   color: #ffffff;
   font-size: 0.875rem;
   line-height: 1.5;
-  margin-bottom: 1.25rem;    
+  margin-bottom: 1.25rem;
   font-weight: 400;
 }
-.made_by{
+
+.made_by {
   font-weight: 400;
   font-size: 13px;
   margin-top: 35px;
   text-align: center;
 }
-.card_image{
+
+.card_image {
   max-height: 194px;
 }
