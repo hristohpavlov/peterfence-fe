@@ -8,6 +8,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import { SessionProvider } from "next-auth/react"
 import { useRouter } from 'next/router'
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/react';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -50,11 +51,16 @@ function MyApp({ Component, pageProps }: AppProps) {
                     {(router.pathname === '/' || router.pathname === '/shop' || router.pathname === '/about') ?
                         <Layout className="bg-primary w-100 overflow-hidden">
                             <ParallaxProvider>
+                                <Analytics />
                                 <Component {...pageProps} />
                             </ParallaxProvider>
                         </Layout>
                         :
-                        <Component {...pageProps} />
+                        <>
+                            <Analytics />
+                            <Component {...pageProps} />
+                        </>
+
                     }
 
                 </ThemeProvider>

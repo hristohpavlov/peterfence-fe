@@ -15,6 +15,7 @@ specifiers:
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
   '@types/react-helmet': ^6.1.6
+  '@vercel/analytics': ^1.0.2
   axios: ^0.27.2
   bcryptjs: ^2.4.3
   bootstrap: ^5.2.3
@@ -55,6 +56,7 @@ dependencies:
   '@next-auth/mongodb-adapter': 1.1.1_ttvuh567ldffwgegtxqyracqry
   '@popperjs/core': 2.11.6
   '@reduxjs/toolkit': 1.8.2_kkwg4cbsojnjnupd3btipussee
+  '@vercel/analytics': 1.0.2
   axios: 0.27.2
   bcryptjs: 2.4.3
   bootstrap: 5.2.3_@popperjs+core@2.11.6
@@ -1262,6 +1264,10 @@ packages:
       '@typescript-eslint/types': 5.28.0
       eslint-visitor-keys: 3.3.0
     dev: true
+
+  /@vercel/analytics/1.0.2:
+    resolution: {integrity: sha512-BZFxVrv24VbNNl5xMxqUojQIegEeXMI6rX3rg1uVLYUEXsuKNBSAEQf4BWEcjQDp/8aYJOj6m8V4PUA3x/cxgg==}
+    dev: false
 
   /@vercel/node-bridge/2.2.2:
     resolution: {integrity: sha512-haGBC8noyA5BfjCRXRH+VIkHCDVW5iD5UX24P2nOdilwUxI4qWsattS/co8QBGq64XsNLRAMdM5pQUE3zxkF9Q==}
@@ -3686,7 +3692,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
